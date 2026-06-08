@@ -3,3 +3,4 @@ CLAUDE.md
 src/__pycache__
 test_tagged.txt
 train_tagged.txt
+__pycache__

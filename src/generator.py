@@ -41,7 +41,7 @@ class TextGenerator:
     def generate(
         self,
         prompt: str,
-        max_new_tokens: int = 100,
+        max_new_tokens: int = 500,
         strategy: str = "greedy",
         temperature: float = 1.0,
         top_k: Optional[int] = None,
@@ -98,7 +98,7 @@ class TextGenerator:
     def compare_strategies(
         self,
         prompt: str,
-        max_new_tokens: int = 100,
+        max_new_tokens: int = 500,
     ) -> Dict[str, str]:
         """
         对比四种采样策略的生成效果
@@ -199,7 +199,7 @@ class TextGenerator:
             # 默认生成
             result = self.generate(
                 user_input,
-                max_new_tokens=100,
+                max_new_tokens=500,
                 strategy="top_k",
                 top_k=40,
                 temperature=0.8,
